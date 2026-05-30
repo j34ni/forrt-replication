@@ -5,7 +5,7 @@ description: Initialise a freshly-cloned forrt-replication-template repository �
 
 # /init-template
 
-You're invoked the first time a user opens Claude in a repository that was created from `forrt-replication-template`. Your job is to convert the placeholder tokens (`{{REPO_NAME}}`, `{{AUTHOR_NAME}}`, etc.) into real values, then commit the change.
+You're invoked the first time a user opens Claude in a repository that was created from `forrt-replication-template`. Your job is to convert the placeholder tokens (`forrt-replication`, `Jean Iaquinta`, etc.) into real values, then commit the change.
 
 ## Step 1 — Detect
 
@@ -29,12 +29,12 @@ Run:
 git remote get-url origin 2>/dev/null
 ```
 
-If the result is a GitHub URL like `https://github.com/<org>/<name>.git` or `git@github.com:<org>/<name>.git`, parse `<org>` → `{{REPO_ORG}}` and `<name>` → `{{REPO_NAME}}`.
+If the result is a GitHub URL like `https://github.com/<org>/<name>.git` or `git@github.com:<org>/<name>.git`, parse `<org>` → `j34ni` and `<name>` → `forrt-replication`.
 
 Also derive:
 
-- `{{YEAR}}` → current year (use `date +%Y`).
-- `{{RELEASE_DATE}}` → today (use `date +%Y-%m-%d`).
+- `2026` → current year (use `date +%Y`).
+- `2026-05-30` → today (use `date +%Y-%m-%d`).
 
 If `git remote` is missing, ask the user for the GitHub org/name they intend to use.
 
@@ -44,19 +44,19 @@ Ask for the following (one prompt; offer them as a structured list):
 
 | Token | What to ask |
 |---|---|
-| `{{AUTHOR_NAME}}` | Full name as you'd like it to appear in citations |
-| `{{AUTHOR_GIVEN}}` | Given name(s) — e.g. "Anne" |
-| `{{AUTHOR_FAMILY}}` | Family name — e.g. "Fouilloux" |
-| `{{AUTHOR_EMAIL}}` | Email for git commits (must be GitHub-verified for commits to credit the right user) |
-| `{{AUTHOR_ORCID}}` | ORCID URL — `https://orcid.org/0000-0000-0000-0000` |
-| `{{AUTHOR_AFFILIATION}}` | Your institution |
-| `{{GITHUB_USERNAME}}` | Your GitHub handle |
-| `{{PAPER_TITLE}}` | Title of the paper being replicated |
-| `{{PAPER_DOI}}` | DOI of the paper, bare form (`10.x/y`) |
-| `{{PAPER_AUTHOR_GIVEN}}` | First author's given name |
-| `{{PAPER_AUTHOR_FAMILY}}` | First author's family name |
-| `{{PAPER_YEAR}}` | Paper publication year |
-| `{{REPO_DESCRIPTION}}` | One-sentence description of this repo |
+| `Jean Iaquinta` | Full name as you'd like it to appear in citations |
+| `Jean` | Given name(s) — e.g. "Anne" |
+| `Iaquinta` | Family name — e.g. "Fouilloux" |
+| `jiaquinta@vitenhub.no` | Email for git commits (must be GitHub-verified for commits to credit the right user) |
+| `https://orcid.org/0000-0002-8763-1643` | ORCID URL — `https://orcid.org/0000-0000-0000-0000` |
+| `VitenHub AS` | Your institution |
+| `j34ni` | Your GitHub handle |
+| `The Arctic has warmed nearly four times faster than the globe since 1979` | Title of the paper being replicated |
+| `10.1038/s43247-022-00498-3` | DOI of the paper, bare form (`10.x/y`) |
+| `Mika` | First author's given name |
+| `Rantanen` | First author's family name |
+| `2022` | Paper publication year |
+| `Replication of Arctic amplification analysis (Rantanen et al. 2022) using ERA5 reanalysis data.` | One-sentence description of this repo |
 | `{{PRIOR_CHAIN_URI}}` | *(Optional)* Apex CiTO URI of a prior FORRT chain this replication extends — e.g. `https://w3id.org/sciencelive/np/RA1q6c0fG2bMbiozF8Az2UpIfzAzqp8hoVEl6QIzfUpH8`. Leave blank if this is a fresh replication with no prior chain on the Science Live / nanopub network. |
 | `{{PRIOR_CHAIN_DESCRIPTION}}` | *(Optional, only if URI above is filled)* One-line description of the prior chain — e.g. `"Iberian Bombus FORRT constellation — Synthesis-level CiTO"`. |
 
@@ -80,9 +80,9 @@ files=$(grep -rln '{{[A-Z_]\+}}' . \
 # For each placeholder, sed-replace
 for f in $files; do
   sed -i.bak \
-    -e "s|{{REPO_NAME}}|<actual repo name>|g" \
-    -e "s|{{REPO_ORG}}|<actual org>|g" \
-    -e "s|{{AUTHOR_NAME}}|<full name>|g" \
+    -e "s|forrt-replication|<actual repo name>|g" \
+    -e "s|j34ni|<actual org>|g" \
+    -e "s|Jean Iaquinta|<full name>|g" \
     # ... etc for each token ...
     "$f" && rm "$f.bak"
 done
@@ -92,7 +92,7 @@ Use the Edit tool for each substitution rather than a shell loop if you prefer p
 
 ## Step 5 — Configure git identity
 
-If the user provided `{{AUTHOR_NAME}}` and `{{AUTHOR_EMAIL}}`, configure the local repo:
+If the user provided `Jean Iaquinta` and `jiaquinta@vitenhub.no`, configure the local repo:
 
 ```bash
 git config user.name "<author name>"

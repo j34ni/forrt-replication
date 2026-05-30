@@ -2,13 +2,13 @@
 
 > This is a working scratchpad for the paper-analysis phase. The output of this file feeds the Quote / AIDA / Claim drafts. It is not itself a nanopub.
 
-**Reference paper:** {{PAPER_TITLE}}
+**Reference paper:** The Arctic has warmed nearly four times faster than the globe since 1979
 
-**DOI:** {{PAPER_DOI}}
+**DOI:** 10.1038/s43247-022-00498-3
 
 **Authors:** _add._
 
-**Year:** {{PAPER_YEAR}}
+**Year:** 2022
 
 ## Headline claim
 
