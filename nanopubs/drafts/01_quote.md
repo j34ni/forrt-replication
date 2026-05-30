@@ -30,13 +30,13 @@ Format: starts with `10.` — bare DOI, **NOT** `https://doi.org/...` form.
 
 Verbatim from the paper PDF in `paper/`. Character-for-character. ≤ 500 chars in whole-text mode.
 
-> _Read the PDF first. Don't paraphrase from memory. See `docs/verify-before-drafting.md`._
+> Verified verbatim from pdftotext extraction of `paper/s43247-022-00498-3.pdf`, abstract, lines 19–21.
 
 ```
-
+Here we show, by using several observational datasets which cover the Arctic region, that during the last 43 years the Arctic has been warming nearly four times faster than the globe, which is a higher ratio than generally reported in literature.
 ```
 
-Character count: ___ / 500.
+Character count: 246 / 500.
 
 ### Comment (textarea, required)
 
