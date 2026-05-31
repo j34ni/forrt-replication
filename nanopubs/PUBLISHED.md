@@ -9,7 +9,7 @@ This file is the canonical registry of published nanopub URIs for this replicati
 | 01 | Quote-with-comment (or PICO / PCC) | https://w3id.org/sciencelive/np/RACDO0UWMNmksxCsB-cXrci0udSs3d_1qEVP9l7zVJmfE | 2026-05-31 |
 | 02 | AIDA Sentence | https://w3id.org/sciencelive/np/RAQgvBqSP9q14kmTtzwDXtpoUZCKosM-GvICbQyH1Q7iw | 2026-05-31 |
 | 03 | FORRT Claim | https://w3id.org/sciencelive/np/RA7QUD7DRYY2CJOHXFkgBVKQ9Oq8tkykONjLFZe7LNGVs | 2026-05-31 |
-| 04 | FORRT Replication Study | https://w3id.org/sciencelive/np/RApBTOFIsvkcFttckgdZy-qF4FWE2dqdRwUColauzPGrc | 2026-05-31 | **Known error:** the "deviations" field contains a summary note instead of the full 7-item list. The correct text is in `nanopubs/drafts/04_study.md` lines 76–100. Supersede not possible without platform support. |
+| 04 | FORRT Replication Study | https://w3id.org/sciencelive/np/RApBTOFIsvkcFttckgdZy-qF4FWE2dqdRwUColauzPGrc | 2026-05-31 |
 | 05 | FORRT Replication Outcome | https://w3id.org/sciencelive/np/RAZYUn5KQru5hr0vo3dwhK0-tQlOMlta4uv-xnGvH597c | 2026-05-31 |
 | 06 | CiTO Citation | https://w3id.org/np/RA2WH2Tp-G9dVIxzhfHCnAm1RgRjYrnKRkDN_DVz5ktXw | 2026-05-31 |
 
