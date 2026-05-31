@@ -30,6 +30,12 @@ If a URI is not in the Science Live namespace, view it via the Science Live view
 https://platform.sciencelive4all.org/np/?uri=<full-URI>
 ```
 
+## Artefacts archivés
+
+| Artefact | DOI |
+|---|---|
+| Source code (concept DOI) | https://doi.org/10.5281/zenodo.20467475 |
+
 ## Cross-references
 
 - Drafts: `nanopubs/drafts/`
