@@ -66,6 +66,15 @@ jobs:
           cache: true
           environments: docs
 
+      - name: Write CDS API credentials
+        if: steps.guard.outputs.skip != 'true' && env.CDSAPI_KEY != ''
+        env:
+          CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
+        run: |
+          mkdir -p ~/.config/cdsapi
+          printf 'url: https://cds.climate.copernicus.eu/api\nkey: %s\n' "$CDSAPI_KEY" \
+            > ~/.cdsapirc
+
       - name: Convert .py notebooks to .ipynb
         if: steps.guard.outputs.skip != 'true'
         run: |
