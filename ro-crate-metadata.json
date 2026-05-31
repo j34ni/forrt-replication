@@ -16,6 +16,8 @@
       "@type": ["Dataset", "ResearchObject"],
       "name": "forrt-replication",
       "description": "Replication of Arctic amplification analysis (Rantanen et al. 2022) using ERA5 reanalysis data.",
+      "identifier": "https://doi.org/10.5281/zenodo.20467475",
+      "version": "0.1.0",
       "datePublished": "2026-05-30",
       "license": { "@id": "https://spdx.org/licenses/MIT" },
       "publisher": { "@id": "https://orcid.org/0000-0002-8763-1643" },
