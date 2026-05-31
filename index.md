@@ -45,7 +45,7 @@ The full chain is registered in [`nanopubs/PUBLISHED.md`](nanopubs/PUBLISHED.md)
 | 03 | FORRT Claim | [RA7QUD7D…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RA7QUD7DRYY2CJOHXFkgBVKQ9Oq8tkykONjLFZe7LNGVs) |
 | 04 | FORRT Replication Study | [RApBTOFI…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RApBTOFIsvkcFttckgdZy-qF4FWE2dqdRwUColauzPGrc) |
 | 05 | FORRT Replication Outcome | [RAZYUn5K…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RAZYUn5KQru5hr0vo3dwhK0-tQlOMlta4uv-xnGvH597c) |
-| 06 | CiTO Citation | [RA2WH2Tp…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/np/RA2WH2Tp-G9dVIxzhfHCnAm1RgRjYrnKRkDN_DVz5ktXw) |
+| 06 | CiTO Citation | [RA-Q5_O6…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RA-Q5_O6eDrQYthV0KarnyBFK33SUQuDXOjem3-4dTe7Y) |
 
 ## Citation
 
