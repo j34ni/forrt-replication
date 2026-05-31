@@ -45,7 +45,14 @@ Subtitle: *"Our interpretation or explanation of why this quotation is relevant.
 Why this quote matters and what the replication tests. Connect the paper's claim to the work this repo does. Don't repeat the quote.
 
 ```
-
+This sentence states the paper's headline quantitative claim — the
+Arctic-to-global OLS warming trend ratio for 1979–2021 — and asserts
+it exceeds prior literature estimates. The ratio is directly computable
+from public observational datasets, making it an ideal target for
+computational replication. We test it using the same four datasets
+(ERA5, GISTEMP v4, Berkeley Earth, HadCRUT5), extending the window to
+1979–2024/2025 to assess whether the claim holds as newer observations
+accumulate.
 ```
 
 ## Publication note

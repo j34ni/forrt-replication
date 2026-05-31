@@ -27,7 +27,7 @@ Arctic Amplification replication outcome — Rantanen et al. 2022
 URI of the Replication Study published in step 04. Pull from `nanopubs/PUBLISHED.md`.
 
 ```
-[To be filled after step 04 is published — see nanopubs/PUBLISHED.md]
+https://w3id.org/sciencelive/np/RApBTOFIsvkcFttckgdZy-qF4FWE2dqdRwUColauzPGrc
 ```
 
 ### Repository URL (text input, required)

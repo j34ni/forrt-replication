@@ -36,7 +36,16 @@ docker run --rm ghcr.io/j34ni/forrt-replication:latest
 
 ## Nanopublication chain
 
-The published chain is listed in [`nanopubs/PUBLISHED.md`](nanopubs/PUBLISHED.md). Each step links to its viewer URL on the Science Live platform.
+The full chain is registered in [`nanopubs/PUBLISHED.md`](nanopubs/PUBLISHED.md). Each step is browsable via the Science Live viewer:
+
+| Step | Template | URI |
+|---|---|---|
+| 01 | Quote-with-comment | [RACDO0UW…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RACDO0UWMNmksxCsB-cXrci0udSs3d_1qEVP9l7zVJmfE) |
+| 02 | AIDA Sentence | [RAQgvBqS…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RAQgvBqSP9q14kmTtzwDXtpoUZCKosM-GvICbQyH1Q7iw) |
+| 03 | FORRT Claim | [RA7QUD7D…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RA7QUD7DRYY2CJOHXFkgBVKQ9Oq8tkykONjLFZe7LNGVs) |
+| 04 | FORRT Replication Study | [RApBTOFI…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RApBTOFIsvkcFttckgdZy-qF4FWE2dqdRwUColauzPGrc) |
+| 05 | FORRT Replication Outcome | [RAZYUn5K…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RAZYUn5KQru5hr0vo3dwhK0-tQlOMlta4uv-xnGvH597c) |
+| 06 | CiTO Citation | [RA2WH2Tp…](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/np/RA2WH2Tp-G9dVIxzhfHCnAm1RgRjYrnKRkDN_DVz5ktXw) |
 
 ## Citation
 

@@ -11,7 +11,7 @@
 URI of the Outcome published in step 05. Pull from `nanopubs/PUBLISHED.md`.
 
 ```
-
+https://w3id.org/sciencelive/np/RAZYUn5KQru5hr0vo3dwhK0-tQlOMlta4uv-xnGvH597c
 ```
 
 ### List citations (repeatable group, required ≥1)
@@ -31,8 +31,10 @@ For question-rooted chains where there is no original paper to confirm/dispute, 
 > **Note:** `replicates` is NOT in the Science Live dropdown (despite existing in upstream CiTO). When citing a notebook/tutorial that was directly reused, use **`credits`** instead.
 
 ```
-
+qualifies
 ```
+
+**Rationale:** Outcome is PartiallySupported — the direction and qualitative magnitude of the claim are confirmed (Arctic warming substantially above 3×), but the extended-period AA ratio (~3.34) is lower than the paper's reported 3.8, qualifying rather than fully confirming the "nearly four times" framing.
 
 ##### DOI or other URL of the cited work (text input)
 
@@ -44,7 +46,7 @@ https://doi.org/10.1038/s43247-022-00498-3
 
 If the Outcome cites methods papers, related replications, or upstream tools, add them here.
 
-- _Type: ___ → URL: ___
+- _Type: `usesMethodIn` → URL: `https://doi.org/10.24381/cds.f17050d7` (ERA5)_
 
 ## Publication note
 
